@@ -1,0 +1,77 @@
+/* custom font */
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+/* variables */
+:root {
+    --primary: #456268;
+    --secondary: #fcf8ec;
+    --warning: #c70039;
+}
+
+/* base style */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Archivo', sans-serif;
+    color: var(--primary);
+}
+
+body {
+    background-color: #fafafa;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* button */
+button, .btn {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: var(--secondary);
+    border-radius: 8px;
+    border: 0;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover, .btn:hover {
+    background-color: var(--primary);
+    color: #fff;
+}
+
+button:disabled {
+    opacity: .5;
+    color: var(--primary);
+    background-color: var(--secondary);
+    cursor: not-allowed;
+}
+
+/* form */
+form {
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 400px;
+    border-radius: 8px;
+    border: 1px solid var(--secondary);
+    box-shadow: 1px 2px 3px rgba(50, 50, 50, .05);
+    background-color: #fff;
+}
+
+input, textarea {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid var(--secondary);
+    outline: none;
+    box-sizing: border-box;
+}
+
+/* error text */
+.error {
+    margin: 16px 0;
+    color: var(--warning);
+    font-size: 14px;
+}
